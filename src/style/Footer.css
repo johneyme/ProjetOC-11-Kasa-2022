@@ -1,0 +1,15 @@
+.footer {
+    
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.footer img {
+    margin-top: 50px;
+}
+
+.footer p {
+    font-size: 24px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}

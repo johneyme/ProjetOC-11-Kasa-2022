@@ -1,0 +1,10 @@
+.location{
+    margin-left: 4em;
+    margin-right: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}

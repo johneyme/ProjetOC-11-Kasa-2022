@@ -1,0 +1,12 @@
+.location-card {
+    height: 320px;
+    width: 320px;
+  border-radius: 5px;
+  margin: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ .location-card h3 {
+    color: white;
+ }
