@@ -1,22 +1,12 @@
-.banner {
+.about-page {
   margin-right: 4em;
   margin-left: 4em;
   margin-bottom: 2em;
   height: 200px;
   border-radius: 25px;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../assets/foggymountain.png");
+    url("../assets/snow-mountain.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
-
-.banner p {
-  font-weight: 600;
-  font-size: 38px;
-  color: white;
 }

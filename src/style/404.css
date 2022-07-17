@@ -1,0 +1,19 @@
+.error-page {
+  text-align: center;
+  margin-top: 7em;
+  margin-bottom: 7em;
+}
+
+.error-msg {
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 2em;
+  margin-bottom: 5em;
+  color: #ff6060;
+}
+
+.back-to-home {
+  font-weight: 600;
+  color: #ff6060;
+  text-decoration: underline;
+}

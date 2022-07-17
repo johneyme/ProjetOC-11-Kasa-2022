@@ -1,8 +1,5 @@
-import Banner from '../components/Banner.js';
-import Location from '../components/Location.js';
-
-
-
+import Banner from "../components/Banner.js";
+import Location from "../components/Location.js";
 
 function Home() {
   return (
