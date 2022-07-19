@@ -4,8 +4,6 @@
   margin-bottom: 2em;
   height: 200px;
   border-radius: 25px;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../assets/foggymountain.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

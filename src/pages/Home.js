@@ -1,11 +1,18 @@
+import { appartement } from "../data/data.js";
 import Banner from "../components/Banner.js";
-import Location from "../components/Location.js";
+import image from "../assets/foggymountain.png";
+import "../style/Home.css";
+import Thumb from "../components/Thumb";
 
 function Home() {
   return (
     <div className="Home">
-      <Banner />
-      <Location />
+      <Banner text="Chez vous, partout et ailleurs" image={image} />
+      <article className="location">
+        {appartement.map(({ id, title, cover }) => (
+          <Thumb key={id} cover={cover} title={title} />
+        ))}
+      </article>
     </div>
   );
 }

@@ -1,9 +1,15 @@
 import "../style/Banner.css";
 
-function Banner() {
+function Banner({ image, text }) {
   return (
-    <aside className="banner">
-      <p>Chez vous, partout et ailleurs</p>
+    <aside
+      className="banner"
+      style={{
+        backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    url(${image})`,
+      }}
+    >
+      <p>{text}</p>
     </aside>
   );
 }

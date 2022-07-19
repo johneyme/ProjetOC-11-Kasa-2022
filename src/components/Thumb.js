@@ -1,6 +1,6 @@
-import "../style/Location-card.css";
+import "../style/Thumb.css";
 
-function LocationCard({ id, title, cover }) {
+function Thumb({ id, title, cover }) {
   return (
     <div
       className="location-card"
@@ -12,4 +12,4 @@ function LocationCard({ id, title, cover }) {
   );
 }
 
-export default LocationCard;
+export default Thumb;

@@ -9,7 +9,12 @@
 .lien-nav {
   font-weight: 600;
   font-size: large;
-  color: #ff6060;
+
   display: inline;
   margin: 25px;
+}
+
+.navlink {
+  text-decoration: none;
+  color: #ff6060;
 }

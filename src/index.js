@@ -6,21 +6,20 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ErrorPage from "./pages/404";
 import About from "./pages/about";
-//import Testpage from "./pages/test";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Header />
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="a-propos" element={<About />}></Route>
         <Route path="*" element={<ErrorPage />}></Route>
       </Routes>
+      <Footer />
     </BrowserRouter>
-    <Footer />
   </React.StrictMode>
 );

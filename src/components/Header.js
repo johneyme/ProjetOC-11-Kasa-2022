@@ -1,18 +1,30 @@
-import '../style/Header.css'
-import logofooter from '../assets/LOGO.svg'
-
+import React from "react";
+import "../style/Header.css";
+import logo from "../assets/LOGO.svg";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
+    <header className="header">
+      <NavLink className="navlink" to="/">
+        <img src={logo} alt="logo-kasa" className="logo-header" />
+      </NavLink>
 
-      <header className="header">
-       <img src={ logofooter } alt='logo-kasa' className='logo-header'/>
-       <ul>
-       <li className='lien-nav'>Accueil</li>
-       <li className='lien-nav'>A Propos</li>
-       </ul>
-      </header>
-    
+      <nav>
+        <ul>
+          <li className="lien-nav">
+            <NavLink className="navlink" to="/">
+              Accueil
+            </NavLink>
+          </li>
+          <li className="lien-nav">
+            <NavLink className="navlink" to="/a-propos">
+              A Propos
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 }
 
