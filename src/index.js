@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ErrorPage from "./pages/404";
-import About from "./pages/about";
+import About from "./pages/About";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 

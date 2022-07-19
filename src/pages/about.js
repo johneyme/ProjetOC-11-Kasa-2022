@@ -1,4 +1,4 @@
-import "../style/about.css";
+import "../style/About.css";
 import Banner from "../components/Banner";
 import Dropdown from "../components/Dropdown";
 import image from "../assets/snow-mountain.png";
