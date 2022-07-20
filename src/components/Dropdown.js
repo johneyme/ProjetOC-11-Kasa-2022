@@ -1,19 +1,19 @@
 import "../style/Dropdown.css";
 
-function Dropdown({ title, description }) {
+function Dropdown({ title, description, items }) {
   function dropdownClick(e) {
-    const dropdownText = e.target.parentNode.nextSibling.classList;
-    if (dropdownText.contains("display")) {
-      dropdownText.remove("display");
+    const dropdownMore = e.target.parentNode.nextSibling.classList;
+    if (dropdownMore.contains("display")) {
+      dropdownMore.remove("display");
     } else {
-      dropdownText.add("display");
+      dropdownMore.add("display");
     }
   }
 
   return (
-    <div className="about-dropdown">
-      <div className="about-dropdown-case">
-        <h4 className="about-dropdown-title">{title}</h4>
+    <div className="dropdown">
+      <div className="dropdown-case">
+        <h4 className="dropdown-title">{title}</h4>
         <span
           className="material-symbols-outlined"
           onClick={(e) => dropdownClick(e)}
@@ -21,9 +21,25 @@ function Dropdown({ title, description }) {
           expand_more
         </span>
       </div>
-      <div className="about-dropdown-text">
-        <p>{description}</p>
-      </div>
+      {(() => {
+        if (description) {
+          return (
+            <div className="dropdown-text">
+              <p>{description}</p>
+            </div>
+          );
+        } else if (items) {
+          return (
+            <div className="dropdown-items">
+              <ul>
+                {items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          );
+        }
+      })()}
     </div>
   );
 }

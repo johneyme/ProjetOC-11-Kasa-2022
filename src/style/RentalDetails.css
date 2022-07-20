@@ -1,0 +1,63 @@
+.rental-details {
+  margin-left: 4em;
+  margin-right: 4em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  color: #ff6060;
+}
+
+.empty-star {
+  color: #e3e3e3;
+}
+
+.rental-details-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.rental-details-firstsection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rental-details-titre h2 {
+  font-size: 36px;
+}
+
+.rental-details-titre h4 {
+  font-size: 18px;
+}
+
+.rental-details-user {
+  display: flex;
+  margin-top: 25px;
+}
+
+.rental-details-username {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.rental-details-userimg {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 25px;
+  margin-top: 15px;
+}
+
+.tags-stars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tags-grid {
+  display: flex;
+}
+
+.rental-details-dropdown-grid {
+  display: flex;
+  justify-content: space-between;
+}

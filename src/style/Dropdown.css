@@ -1,26 +1,28 @@
-.about-dropdown {
-  margin-bottom: 20px;
+/* CSS DROPDOWN */
+
+.dropdown {
+  margin-top: 20px;
+  width: 48%;
+  font-size: 18px;
 }
-.about-dropdown-case {
-  margin-left: auto;
-  margin-right: auto;
+
+.dropdown-case {
   display: flex;
   justify-content: space-between;
   background-color: #ff6060;
-  max-width: 60%;
   height: 47px;
   padding-left: 20px;
   padding-right: 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   color: white;
   align-items: center;
-  font-size: 24px;
 }
 
-.about-dropdown-text {
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
+.dropdown-title {
+  text-align: left;
+}
+
+.dropdown-items {
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
@@ -28,7 +30,19 @@
   background-color: #f6f6f6;
   border-radius: 0 0 5px 5px;
   color: #ff6060;
-  font-size: 24px;
+  display: none;
+}
+
+.dropdown-text {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  background-color: #f6f6f6;
+  border-radius: 0 0 5px 5px;
+  color: #ff6060;
   display: none;
 }
 

@@ -2,18 +2,19 @@
   text-align: center;
   margin-top: 7em;
   margin-bottom: 7em;
+  font-weight: 500;
 }
 
 .error-msg {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 36px;
   margin-top: 2em;
   margin-bottom: 5em;
   color: #ff6060;
 }
 
 .back-to-home {
-  font-weight: 600;
+  font-size: 18px;
   color: #ff6060;
   text-decoration: underline;
 }

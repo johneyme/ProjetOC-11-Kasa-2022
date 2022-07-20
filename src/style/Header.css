@@ -6,10 +6,10 @@
   display: flex;
   justify-content: space-between;
 }
-.lien-nav {
-  font-weight: 600;
-  font-size: large;
 
+.lien-nav {
+  font-weight: 500;
+  font-size: 24px;
   display: inline;
   margin: 25px;
 }

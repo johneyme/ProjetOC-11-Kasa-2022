@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ErrorPage from "./pages/404";
 import About from "./pages/About";
+import RentalDetails from "./pages/RentalDetails";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -18,8 +19,9 @@ root.render(
         <Route path="/" element={<Home />}></Route>
         <Route path="a-propos" element={<About />}></Route>
         <Route path="*" element={<ErrorPage />}></Route>
+        <Route path="fiche-logement" element={<RentalDetails />}></Route>
       </Routes>
-      <Footer />
     </BrowserRouter>
+    <Footer />
   </React.StrictMode>
 );
