@@ -1,5 +1,5 @@
 import { appartement } from "../data/data.js";
-import Banner from "../components/Banner.js";
+import Banner from "../components/Banner.jsx";
 import image from "../assets/foggymountain.png";
 import "../style/Home.css";
 import Thumb from "../components/Thumb";

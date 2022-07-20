@@ -2,7 +2,7 @@
 import "../style/RentalDetails.css";
 import Dropdown from "../components/Dropdown";
 import image from "../assets/rentalbackground.jpg";
-import Tag from "../components/tags";
+import Tag from "../components/Tags";
 import user from "../assets/userkasa.jpeg";
 
 function RentalDetails() {
