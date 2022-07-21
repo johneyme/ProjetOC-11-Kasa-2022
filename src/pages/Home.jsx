@@ -10,7 +10,7 @@ function Home() {
       <Banner text="Chez vous, partout et ailleurs" image={image} />
       <article className="location">
         {appartement.map(({ id, title, cover }) => (
-          <Thumb key={id} cover={cover} title={title} />
+          <Thumb key={id} id={id} title={title} cover={cover} />
         ))}
       </article>
     </main>

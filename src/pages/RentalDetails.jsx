@@ -4,9 +4,13 @@ import Dropdown from "../components/Dropdown";
 import image from "../assets/rentalbackground.jpg";
 import Tag from "../components/Tags";
 import user from "../assets/userkasa.jpeg";
+import StarsScale from "../components/StarsScale";
 
 function RentalDetails() {
   const items = ["item 1", "item 2", "item 3", "item 4", "item 5"];
+
+  const tags = ["tag 1", "tag 2", "tag 3"];
+
   return (
     <section className="rental-details">
       <img
@@ -31,19 +35,8 @@ function RentalDetails() {
         </div>
       </div>
       <div className="tags-stars">
-        <div className="tags-grid">
-          <Tag />
-          <Tag />
-          <Tag />
-        </div>
-
-        <div className="stars-grid">
-          <span className="material-symbols-outlined">star</span>
-          <span className="material-symbols-outlined">star</span>
-          <span className="material-symbols-outlined">star</span>
-          <span className="material-symbols-outlined empty-star">star</span>
-          <span className="material-symbols-outlined empty-star">star</span>
-        </div>
+        <Tag tags={tags} />
+        <StarsScale scaleValue="2" />
       </div>
       <div className="rental-details-dropdown-grid">
         <Dropdown title="Titre 1" items={items} />
