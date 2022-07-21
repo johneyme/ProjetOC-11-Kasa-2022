@@ -5,6 +5,7 @@ import image from "../assets/rentalbackground.jpg";
 import Tag from "../components/Tags";
 import user from "../assets/userkasa.jpeg";
 import StarsScale from "../components/StarsScale";
+//import PropTypes from "prop-types";
 
 function RentalDetails() {
   const items = ["item 1", "item 2", "item 3", "item 4", "item 5"];
@@ -57,5 +58,11 @@ function RentalDetails() {
     </section>
   );
 }
+
+/*RentalDetails.propTypes = {
+  cover: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
+};*/
 
 export default RentalDetails;
