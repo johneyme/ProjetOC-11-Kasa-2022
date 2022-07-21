@@ -1,19 +1,18 @@
 import "../style/Thumb.css";
+import { Link } from "react-router-dom";
 
 function Thumb({ id, title, cover }) {
-  function handleClick(id) {
-    console.log("✨ Ceci est mon id", id);
-  }
-
   return (
-    <div
-      className="location-card"
-      style={{ backgroundImage: `url(${cover})` }}
-      key={id}
-      id={id}
-      onClick={() => handleClick(id)}
-    >
-      <h3>{title}</h3>
+    <div className="location-card">
+      <Link className="link-thumb" key={id} to={"/fiche-logement?id=" + id}>
+        <img
+          className="location-card-img"
+          src={cover}
+          alt={"image de " + title}
+        ></img>
+
+        <h3>{title}</h3>
+      </Link>
     </div>
   );
 }
