@@ -12,14 +12,10 @@ function RentalDetails() {
 
   const tags = ["tag 1", "tag 2", "tag 3"];
 
-  function idCapture() {
-    const queryString = window.location.search;
-    const idValue = new URLSearchParams(queryString).get("id");
+  const queryString = window.location.search;
+  const idValue = new URLSearchParams(queryString).get("id");
 
-    console.log(idValue);
-  }
-
-  idCapture();
+  console.log(idValue);
 
   return (
     <section className="rental-details">
