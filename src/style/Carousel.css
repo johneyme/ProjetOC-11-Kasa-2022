@@ -58,3 +58,25 @@
 .carousel-container .prev {
   left: 75px;
 }
+
+/* RESPONSIVE MOBILE */
+
+@media only screen and (max-width: 600px) {
+  .carousel-container .material-symbols-outlined {
+    top: 280px;
+  }
+  .carousel-container .next {
+    right: 1px;
+  }
+  .carousel-container .prev {
+    left: 20px;
+  }
+
+  .carousel-container .current-page {
+    display: none;
+  }
+
+  .carousel-container img {
+    object-fit: cover;
+  }
+}

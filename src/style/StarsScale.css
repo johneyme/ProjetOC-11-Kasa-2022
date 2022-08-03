@@ -4,3 +4,21 @@
 .empty-star {
   color: #e3e3e3;
 }
+
+/* RESPONSIVE TAB */
+
+@media only screen and (max-width: 800px) {
+  .stars-grid span {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+/* RESPONSIVE MOBILE */
+
+@media only screen and (max-width: 600px) {
+  .stars-grid span {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}

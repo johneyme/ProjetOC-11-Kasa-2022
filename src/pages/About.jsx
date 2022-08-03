@@ -1,12 +1,17 @@
 import "../style/About.css";
-import Banner from "../components/Banner";
 import Dropdown from "../components/Dropdown";
 import image from "../assets/snow-mountain.png";
 
 function About() {
   return (
     <article className="about-page">
-      <Banner text="" image={image} />
+      <aside
+        className="about-banner"
+        style={{
+          backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    url(${image})`,
+        }}
+      ></aside>
       <Dropdown
         title="Fiabilité"
         description="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."

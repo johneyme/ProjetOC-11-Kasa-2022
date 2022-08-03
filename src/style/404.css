@@ -18,3 +18,15 @@
   color: #ff6060;
   text-decoration: underline;
 }
+
+/* RESPONSIVE MOBILE */
+
+@media only screen and (max-width: 600px) {
+  .error-page img {
+    width: 50%;
+  }
+
+  .error-msg {
+    font-size: 18px;
+  }
+}

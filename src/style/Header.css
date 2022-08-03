@@ -18,3 +18,24 @@
   text-decoration: none;
   color: #ff6060;
 }
+
+/* RESPONSIVE MOBILE */
+
+@media only screen and (max-width: 600px) {
+  .header {
+    margin: 15px;
+  }
+
+  .redirection-home-logo {
+    width: 45%;
+  }
+  .redirection-home-logo img {
+    width: 100%;
+  }
+
+  .lien-nav {
+    font-size: 12px;
+    font-weight: 500;
+    margin: 10px;
+  }
+}

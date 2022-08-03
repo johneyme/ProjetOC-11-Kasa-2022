@@ -3,7 +3,7 @@
   color: white;
   margin-right: 10px;
   background-color: #ff6060;
-  border-radius: 25px;
+  border-radius: 10px;
   text-decoration: none;
   font-size: 14px;
   width: 115px;
@@ -12,4 +12,15 @@
   text-align: center;
   justify-content: center;
   font-weight: 600;
+}
+
+/* RESPONSIVE MOBILE */
+
+@media only screen and (max-width: 600px) {
+  .tag {
+    border-radius: 5px;
+    font-size: 10px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+  }
 }

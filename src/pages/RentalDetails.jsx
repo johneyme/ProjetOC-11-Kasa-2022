@@ -9,13 +9,28 @@ function RentalDetails() {
   const queryString = window.location.search;
   const idValue = new URLSearchParams(queryString).get("id");
 
+  console.log(window.location.pathname);
+
   let loadingAppartement = {};
+  let idArray = [];
 
   appartement.forEach((app) => {
-    if (app.id === idValue) {
-      return (loadingAppartement = app);
-    }
+    idArray.push(app.id);
   });
+
+  const checkId = idArray.includes(idValue);
+
+  if (!checkId) {
+    window.location.pathname = "*";
+  } else {
+    appartement.forEach((app) => {
+      const appId = app.id;
+
+      if (appId === idValue) {
+        return (loadingAppartement = app);
+      }
+    });
+  }
 
   return (
     <section className="rental-details">

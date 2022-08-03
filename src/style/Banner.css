@@ -18,3 +18,23 @@
   font-size: 48px;
   color: white;
 }
+
+/* RESPONSIVE MOBILE */
+
+@media only screen and (max-width: 600px) {
+  .banner {
+    height: 111px;
+    margin: 15px;
+    border-radius: 5px;
+    text-align: left;
+    justify-content: left;
+    margin-bottom: 0;
+  }
+
+  .banner p {
+    width: 65%;
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+}

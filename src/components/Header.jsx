@@ -5,11 +5,11 @@ import { NavLink } from "react-router-dom";
 function Header() {
   return (
     <header className="header">
-      <NavLink className="navlink" to="/">
+      <NavLink className="redirection-home-logo" to="/">
         <img src={logo} alt="logo-kasa" className="logo-header" />
       </NavLink>
 
-      <nav>
+      <nav className="navigation">
         <ul>
           <li className="lien-nav">
             <NavLink className="navlink" to="/">
