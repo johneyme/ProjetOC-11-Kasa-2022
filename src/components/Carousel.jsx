@@ -14,13 +14,17 @@ const Carousel = (props) => {
 
   const next = () => {
     if (currentIndex < length - 1) {
-      setCurrentIndex((prevState) => prevState + 1);
+      setCurrentIndex((state) => state + 1);
+    } else if (currentIndex === children.length - 1) {
+      setCurrentIndex((state) => (state = 0));
     }
   };
 
   const prev = () => {
     if (currentIndex > 0) {
-      setCurrentIndex((prevState) => prevState - 1);
+      setCurrentIndex((state) => state - 1);
+    } else if (currentIndex === 0) {
+      setCurrentIndex((state) => (state = children.length - 1));
     }
   };
 
