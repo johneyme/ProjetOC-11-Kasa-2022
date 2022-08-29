@@ -9,8 +9,6 @@ function RentalDetails() {
   const queryString = window.location.search;
   const idValue = new URLSearchParams(queryString).get("id");
 
-  console.log(window.location.pathname);
-
   let loadingAppartement = {};
   let idArray = [];
 
