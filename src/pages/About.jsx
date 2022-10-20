@@ -1,6 +1,6 @@
 import Dropdown from "../components/Dropdown";
 import image from "../assets/snow-mountain.png";
-import "../style/About.css";
+import "../style/aboutkasa.css";
 
 function About() {
   return (
